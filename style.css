@@ -1,60 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #24252A;
-}
-
-li, a, button, h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #00a1c9;
 }
 
 /* navigation bar styling */
+li,
+a,
+button,
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #edf0f1;
+  text-decoration: none;
+  background-color: #24252a;
+}
+
 header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252a;
+  border-top: white;
+  border-top-style: dashed;
+  border-bottom: white;
+  border-bottom-style: dashed;
 }
 
 h1 {
-    cursor: pointer;
-    margin-right: auto;
+  cursor: pointer;
+  margin-right: auto;
 }
 
 .nav-links {
-    list-style-type: none;
+  list-style-type: none;
+  background-color: #24252a;
 }
 
 .nav-links li {
-    display: inline-block;
-    padding: 0px 20px;
+  display: inline-block;
+  padding: 0px 20px;
 }
 
 .nav-links li a {
-    transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .nav-links li a:hover {
-    color: #0088a9;
+  color: #0088a9;
 }
 
-button{
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
 button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* image styling */
+figure {
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px;
+}
+
+figure img {
+  width: 400px;
+  height: 500px;
+  border: white;
+  border-style: dashed;
+  border-radius: 50px;
+}
+
+section p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #edf0f1;
+  text-decoration: none;
+  text-align: center;
+}
+
+section img {
+  width: 400px;
+  height: 500px;
+  border: white;
+  border-style: dashed;
+  border-radius: 50px;
+}
+
+.projects {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
