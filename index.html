@@ -5,47 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Professional Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css"/>
   </head>
   <body>
     <header>
       <h1 class="logo">Tahlia La Galia</h1>
       <nav>
         <ul class="nav-links">
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
       </nav>
-      <a href="#" class="cta"><button>Contact</button></a>
+      <a href="#" class="cta"><button><a href="#contact-me">Contact</a></button></a>
     </header>
 
     <figure>
-      <img src="images/displayphoto.jpg" alt="" />
+      <img src="assets/images/displayphoto.jpg" alt="photo of myself" />
     </figure>
 
     <section>
-      <p>Hey, my name is Tahlia and i am a software developer in training!</p>
-      <p>Peep down below to see the awesome things that I've been up to!</p>
+      <h1 id="about-me">About Me</h1>
+      <p>Hey, my name is Tahlia and i am a software developer in training! Peep down below to see the awesome things that I've been up to!</p>
     </section>
 
-    <main>
-      <section class="firstproject">
+    <article class="projects">
+      <h1 id="projects">Projects</h1>
+      <section class="main-project-card">
         <p>Code Refractor</p>
-        <img src="images/displayphoto.jpg" alt="" />
+        <a href="https://tahlialg.github.io/first-hw-task/"><img src="assets/images/code-refractoring-card.jpeg" alt="code on laptop" /></a>
       </section>
-      <section class="projects">
-        <p>Code Refractor</p>
-        <img src="images/displayphoto.jpg" alt="" />
+
+      <section class="project-cards">
+        <p>Project 3</p>
+        <img src="assets/images/coming-soon.jpeg" alt="coming soon title" />
       </section>
-      <section class="projects">
-        <p>Code Refractor</p>
-        <img src="images/displayphoto.jpg" alt="" />
+      <section class="project-cards">
+        <p>Project 4</p>
+        <img src="assets/images/coming-soon.jpeg" alt="coming soon title" />
       </section>
-      <section class="projects">
-        <p>Code Refractor</p>
-        <img src="images/displayphoto.jpg" alt="" />
+      <section class="project-cards">
+        <p>Project 5</p>
+        <img src="assets/images/coming-soon.jpeg" alt="coming soon title" />
       </section>
-    </main>
+    </article>
+
+    <footer>
+      <h1 id="contact-me">Connect with me!</h1>
+        <button><a href="mailto:tahlia.lagalia@gmail.com">Email</a></button>
+        <button>
+          <a href="https://www.linkedin.com/in/tahlia-la-galia-865379193/"
+            >LinkedIn</a>
+        </button>
+        <button><a href="https://github.com/tahlialg">Github</a></button>
+      </a>
+    </footer>
   </body>
 </html>
